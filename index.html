@@ -19,12 +19,220 @@
     
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <div id="root"></div>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="#" class="logo">Noah.dev</a>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="contact-btn">Contact Me</a>
+          </div>
+          <button class="menu-btn">Menu</button>
+        </div>
+      </nav>
+    </header>
+    
+    <section id="hero" class="hero">
+      <div class="container">
+        <h1>👋 Hi, I'm <span class="gradient-text">Noah</span></h1>
+        <h2>Software Developer & Web Designer</h2>
+        <p>I build exceptional and accessible digital experiences for the web.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary-btn">View My Work</a>
+          <a href="#contact" class="btn outline-btn">Contact Me</a>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=1074&auto=format&fit=crop" alt="Profile picture">
+          </div>
+          <div class="about-text">
+            <p>I'm a passionate software developer with expertise in building modern web applications. With a strong foundation in both frontend and backend technologies, I enjoy creating elegant solutions to complex problems.</p>
+            <p>My journey in software development began during my college years, and since then, I've been continuously learning and adapting to new technologies. I believe in writing clean, maintainable code and building applications that provide exceptional user experiences.</p>
+            <p>When I'm not coding, you can find me exploring new hiking trails, reading tech blogs, or experimenting with photography.</p>
+            <div class="about-links">
+              <a href="#" class="btn small-btn">Resume</a>
+              <a href="#" class="btn small-btn">GitHub</a>
+              <a href="#" class="btn small-btn">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2>My Skills</h2>
+        <p class="section-desc">Here are the technologies and tools I work with to bring ideas to life</p>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend Development</h3>
+            <div class="skill-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>React</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Backend Development</h3>
+            <div class="skill-tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>Python</span>
+              <span>RESTful APIs</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Database</h3>
+            <div class="skill-tags">
+              <span>MongoDB</span>
+              <span>PostgreSQL</span>
+              <span>MySQL</span>
+              <span>Firebase</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Development Tools</h3>
+            <div class="skill-tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>VS Code</span>
+              <span>Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>My Projects</h2>
+        <p class="section-desc">Here are some of the projects I've worked on</p>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1074&auto=format&fit=crop" alt="Project 1">
+            </div>
+            <div class="project-info">
+              <h3>Portfolio Website</h3>
+              <p>A personal portfolio website built with HTML, CSS, and JavaScript to showcase my projects and skills.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn small-btn">Code</a>
+                <a href="#" class="btn small-btn primary-btn">Live Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1470&auto=format&fit=crop" alt="Project 2">
+            </div>
+            <div class="project-info">
+              <h3>E-commerce Dashboard</h3>
+              <p>A comprehensive admin dashboard for an e-commerce platform with analytics and inventory tracking.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn small-btn">Code</a>
+                <a href="#" class="btn small-btn primary-btn">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p class="section-desc">Have a question or want to work together? Feel free to reach out!</p>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="contact-details">
+              <div class="contact-detail">
+                <h4>Email</h4>
+                <a href="mailto:hello@noahdev.com">hello@noahdev.com</a>
+              </div>
+              <div class="contact-detail">
+                <h4>Location</h4>
+                <p>San Francisco, CA</p>
+              </div>
+              <div class="contact-detail">
+                <h4>Phone</h4>
+                <a href="tel:+14155552671">(415) 555-2671</a>
+              </div>
+            </div>
+            <h3>Connect With Me</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">GitHub</a>
+              <a href="#" class="social-link">LinkedIn</a>
+              <a href="#" class="social-link">Twitter</a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Send Me a Message</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="How can I help you?" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Noah.dev</h3>
+            <p>Building digital experiences that matter</p>
+          </div>
+          <div class="footer-links">
+            <button id="scroll-to-top" class="scroll-top-btn">↑</button>
+            <p>© 2025 Noah. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <script src="script.js"></script>
   </body>
 </html>
