@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Simple scroll animation
   function revealOnScroll() {
     const sections = document.querySelectorAll('section');
+    const projectCards = document.querySelectorAll('.project-card');
     
     sections.forEach(section => {
       const sectionTop = section.getBoundingClientRect().top;
@@ -87,6 +88,15 @@ document.addEventListener('DOMContentLoaded', function() {
       
       if (sectionTop < windowHeight - 150) {
         section.classList.add('fade-in');
+      }
+    });
+    
+    projectCards.forEach(card => {
+      const cardTop = card.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      
+      if (cardTop < windowHeight - 100) {
+        card.classList.add('fade-in');
       }
     });
   }
